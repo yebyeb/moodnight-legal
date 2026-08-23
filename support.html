@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoodNight — Support</title>
+<link rel="icon" href="icon.png?v=2">
+<meta name="theme-color" content="#080d0b">
+<style>
+  /* ── PALET LOGODAN ────────────────────────────────────────────
+     Renkler uygulamanın kendi simgesinden örneklendi: koyu yeşile
+     yakın siyah zeminde (#020807) açık yeşil yapraklar (#d4e2db).
+     Bu sayfalar bir tur önceki adın (Nightlull) indigo/mavi
+     paletini taşıyordu ve yeni logoyla hiçbir ilgisi yoktu.
+     Kontrastlar ölçüldü: koyu temada gövde 14,1:1 / bağlantı
+     12,0:1; açık temada gövde 12,4:1 / bağlantı 6,1:1 — hepsi
+     WCAG AA'nın (4,5) üstünde. */
+  :root{
+    --bg:#ffffff; --ink:#15241f; --body:#2b3733; --muted:#5d6b65;
+    --link:#1f6f57; --card:#eef5f1; --line:#d5e5dd; --rule:#2f8a6c;
+    --warnbg:#fdf5f3; --warnline:#b3402c;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#080d0b; --ink:#f2f7f4; --body:#d3ddd8; --muted:#93a49c;
+      --link:#9fd6c0; --card:#111a16; --line:#1d2b25; --rule:#4f9d81;
+      --warnbg:#1c1512; --warnline:#d08a76;
+    }
+  }
+  body{max-width:800px;margin:0 auto;padding:24px 20px;
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+       background:var(--bg);color:var(--body)}
+  /* Simge her sayfanın başında: kullanıcı hangi uygulamanın
+     koşullarını okuduğunu ilk bakışta görsün. Ana sayfada zaten
+     vardı, alt sayfalarda hiç yoktu. */
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+  .brand img{width:44px;height:44px;border-radius:23%;flex:none;
+             box-shadow:0 3px 12px rgba(0,0,0,.28)}
+  .brand span{font-weight:700;font-size:17px;color:var(--ink);letter-spacing:-.01em}
+  h1{color:var(--ink);letter-spacing:-.02em}
+  h2{color:var(--ink);margin-top:2em;font-size:20px}
+  h3{color:var(--ink);margin-top:1.4em;font-size:17px}
+  a{color:var(--link)}
+  .muted,.subtitle{color:var(--muted);font-size:14px}
+  .subtitle{font-size:16px;margin-bottom:28px}
+  .highlight,.card{background:var(--card);border:1px solid var(--line);
+       padding:14px 18px;margin:20px 0;border-radius:10px}
+  .highlight{border-left:4px solid var(--rule)}
+  .warn{background:var(--warnbg);border-left:4px solid var(--warnline);
+        padding:14px 18px;margin:20px 0;border-radius:10px}
+  ul{padding-left:22px}
+</style>
+</head>
+<body>
+  <a class="brand" href="index.html" style="text-decoration:none">
+    <img src="icon.png?v=2" alt="">
+    <span>MoodNight</span>
+  </a>
+  <h1>MoodNight</h1>
+  <p class="subtitle">Nature soundscapes for sleep and calm — Support &amp; Help</p>
+
+  <h2>Contact Us</h2>
+  <div class="card">
+    <p>If you need help or have questions, please reach out. We typically respond within
+    24–48 hours.</p>
+    <p style="margin-top:10px">✉ Email:
+      <a href="mailto:yebappcontact@gmail.com">yebappcontact@gmail.com</a></p>
+    <p style="margin-top:6px;font-size:14px" class="subtitle">When reporting a problem,
+    please include your iPhone model, your iOS version, and which sounds were playing.</p>
+  </div>
+
+  <h2>Playback</h2>
+
+  <h3>The sound stops when I lock my screen</h3>
+  <p>It should not. MoodNight declares the iOS background-audio capability and keeps
+  playing with the screen off. If it stops, check that iOS Low Power Mode is not
+  aggressively suspending the app, and that Screen Time or a Focus mode is not closing it.
+  If it still happens, email us with your iPhone model and iOS version.</p>
+
+  <h3>I hear nothing even though the app says it is playing</h3>
+  <p>Check the physical silent switch and the volume while the app is in the foreground —
+  iOS keeps a separate volume level for media. Also make sure the audio is not being routed
+  to a Bluetooth device in another room.</p>
+
+  <h3>Can I use it with headphones overnight?</h3>
+  <p>You can, but keep the volume low. Prolonged listening at high volume can damage
+  hearing, and you may not hear alarms or someone calling you. Please read the safety note
+  in the <a href="terms.html">Terms of Use</a>.</p>
+
+  <h3>Another app's audio stopped when I started MoodNight</h3>
+  <p>That is intentional. MoodNight takes over the audio session rather than mixing on top
+  of whatever else is playing, because layering a podcast under rain is almost never what
+  someone wants at bedtime.</p>
+
+  <h2>Mixing sounds</h2>
+
+  <h3>How do I combine sounds?</h3>
+  <p>Open a sound, then use <em>Add sound</em> to put another underneath it. Each one
+  becomes a layer with its own volume, so you can set light rain under a loud ocean, or
+  crickets under a distant thunderstorm.</p>
+  <p>Without a subscription you can listen to any single sound in the catalogue, one at a
+  time. Layering is what MoodNight Premium unlocks: up to five sounds at once. Three or
+  four is usually where a mix stops getting better and starts getting muddy.</p>
+
+  <h3>I tapped a sound in Explore and it replaced what was playing</h3>
+  <p>That is intended: in Explore a tap plays the sound you tapped. To build a mix instead,
+  use <em>Add sound</em> in the player, or the plus button in My Mixes — those are the
+  places where a tap adds rather than replaces.</p>
+
+  <h3>What is the difference between the nature sounds and the music?</h3>
+  <p>The nature sounds are real recordings that ship inside the app. The music layers are
+  <em>generated on your device as they play</em> — they are synthesised, not recorded, so
+  they never repeat in exactly the same way and add almost nothing to the download size.
+  They are kept in a separate group on purpose, so you always know which is which.</p>
+
+  <h3>How do I save a mix?</h3>
+  <p>Give it a name and save it; it appears under My Mixes and can be started again with
+  one tap. Mixes are stored on your device, and in your own iCloud if it is on.</p>
+
+  <h3>The app suggested a soundscape after asking how I feel</h3>
+  <p>That is the mood check-in. Your answer is used at that moment to pick a matching
+  soundscape and is then discarded — it is not saved as a history and never leaves your
+  phone.</p>
+
+  <h2>Sleep timer</h2>
+
+  <h3>What does the timer do exactly?</h3>
+  <p>It fades the audio down and stops playback after the period you choose, so you do not
+  wake at 4am to ocean waves. Your last-used duration is remembered for next time.</p>
+
+  <h3>Is the timer reliable?</h3>
+  <p>It is a convenience, not an alarm. A phone call, a system update, another app grabbing
+  the audio, or a flat battery can all change when playback actually stops. Do not depend
+  on it for anything that matters.</p>
+
+  <h2>Subscription</h2>
+
+  <h3>What does MoodNight Premium include?</h3>
+  <p>Layering up to five sounds at once, the full catalogue including the music beds, and
+  saving your own mixes without limits. Everything else — single sounds, the sleep timer,
+  the star readings — works without paying.</p>
+
+  <h3>How do I cancel?</h3>
+  <p>Cancelling is done in your Apple Account, not in the app: <em>Settings → your name →
+  Subscriptions → MoodNight</em>. Cancelling stops the next renewal; the paid features
+  stay available until the period you already paid for ends, and the app shows you that
+  date.</p>
+
+  <h3>I subscribed but a new phone shows the app as free</h3>
+  <p>Open the subscription screen and tap <em>Restore</em>. That asks the App Store, using
+  the same Apple Account, to hand your subscription back. It needs a connection.</p>
+
+  <h3>I switched from monthly to yearly and nothing changed</h3>
+  <p>Apple decides when a plan change takes effect. Moving to the longer plan applies
+  straight away; moving to the shorter one waits until the period you are in ends. Where a
+  change is queued, the subscription screen marks the new plan as next and shows the date
+  it starts.</p>
+
+  <h2>Your data</h2>
+
+  <h3>Where are my mixes stored?</h3>
+  <p>On your device, and in <strong>your own iCloud</strong> if you are signed in to it. That
+  is what lets your mixes, playlists and settings come back when you reinstall the app or
+  open it on another device with the same Apple Account.</p>
+  <p>There is still no account with us and no copy on our servers: the data sits in your
+  iCloud, under your Apple Account, and we cannot read it. If you are not signed in to
+  iCloud, or you turn iCloud off for MoodNight in your device settings, everything stays
+  on the device only &mdash; and then uninstalling the app does lose it.</p>
+
+  <h3>Does the app need the internet?</h3>
+  <p>No. Every sound ships inside the app and the music is generated locally. MoodNight
+  works in airplane mode. The one thing that does need a connection is the App Store:
+  buying, restoring or changing a subscription talks to Apple. The App says so on screen
+  when you are offline instead of failing silently.</p>
+
+  <h3>What do you collect about me?</h3>
+  <p>Nothing. No account, no server, no analytics, no advertising. Full detail:
+  <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <h2>Languages and appearance</h2>
+
+  <h3>Which languages are supported?</h3>
+  <p>Eighteen: English, Turkish, German, French, Spanish, Portuguese, Italian, Dutch,
+  Swedish, Norwegian, Danish, Finnish, Russian, Arabic, Persian, Japanese, Korean and
+  Simplified Chinese. Arabic and Persian are laid out right-to-left. The app follows your
+  device language when it can, and you can override it in Settings.</p>
+
+  <h3>Can I use a light theme?</h3>
+  <p>Yes — Settings offers dark, light, or follow-the-system. The dark theme is the default
+  because most people open the app in a dark room.</p>
+
+  <p class="subtitle" style="margin-top:3em">
+    <a href="index.html">Home</a> &middot;
+    <a href="privacy.html">Privacy Policy</a> &middot;
+    <a href="terms.html">Terms of Use</a>
+  </p>
+</body>
+</html>

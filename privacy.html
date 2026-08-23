@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MoodNight — Privacy Policy</title>
+<link rel="icon" href="icon.png?v=2">
+<meta name="theme-color" content="#080d0b">
+<style>
+  /* ── PALET LOGODAN ────────────────────────────────────────────
+     Renkler uygulamanın kendi simgesinden örneklendi: koyu yeşile
+     yakın siyah zeminde (#020807) açık yeşil yapraklar (#d4e2db).
+     Bu sayfalar bir tur önceki adın (Nightlull) indigo/mavi
+     paletini taşıyordu ve yeni logoyla hiçbir ilgisi yoktu.
+     Kontrastlar ölçüldü: koyu temada gövde 14,1:1 / bağlantı
+     12,0:1; açık temada gövde 12,4:1 / bağlantı 6,1:1 — hepsi
+     WCAG AA'nın (4,5) üstünde. */
+  :root{
+    --bg:#ffffff; --ink:#15241f; --body:#2b3733; --muted:#5d6b65;
+    --link:#1f6f57; --card:#eef5f1; --line:#d5e5dd; --rule:#2f8a6c;
+    --warnbg:#fdf5f3; --warnline:#b3402c;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#080d0b; --ink:#f2f7f4; --body:#d3ddd8; --muted:#93a49c;
+      --link:#9fd6c0; --card:#111a16; --line:#1d2b25; --rule:#4f9d81;
+      --warnbg:#1c1512; --warnline:#d08a76;
+    }
+  }
+  body{max-width:800px;margin:0 auto;padding:24px 20px;
+       font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+       background:var(--bg);color:var(--body)}
+  /* Simge her sayfanın başında: kullanıcı hangi uygulamanın
+     koşullarını okuduğunu ilk bakışta görsün. Ana sayfada zaten
+     vardı, alt sayfalarda hiç yoktu. */
+  .brand{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+  .brand img{width:44px;height:44px;border-radius:23%;flex:none;
+             box-shadow:0 3px 12px rgba(0,0,0,.28)}
+  .brand span{font-weight:700;font-size:17px;color:var(--ink);letter-spacing:-.01em}
+  h1{color:var(--ink);letter-spacing:-.02em}
+  h2{color:var(--ink);margin-top:2em;font-size:20px}
+  h3{color:var(--ink);margin-top:1.4em;font-size:17px}
+  a{color:var(--link)}
+  .muted,.subtitle{color:var(--muted);font-size:14px}
+  .subtitle{font-size:16px;margin-bottom:28px}
+  .highlight,.card{background:var(--card);border:1px solid var(--line);
+       padding:14px 18px;margin:20px 0;border-radius:10px}
+  .highlight{border-left:4px solid var(--rule)}
+  .warn{background:var(--warnbg);border-left:4px solid var(--warnline);
+        padding:14px 18px;margin:20px 0;border-radius:10px}
+  ul{padding-left:22px}
+</style>
+</head>
+<body>
+  <a class="brand" href="index.html" style="text-decoration:none">
+    <img src="icon.png?v=2" alt="">
+    <span>MoodNight</span>
+  </a>
+<h1>Privacy Policy</h1>
+<p class="muted">Last Updated: August 20, 2026</p>
+
+<p>This Privacy Policy explains how information is handled when you use
+<strong>MoodNight</strong> (the "App"). By using the App, you agree to this policy.</p>
+
+<div class="highlight">
+  <strong>The short version:</strong> Nothing leaves your phone. MoodNight has no user
+  accounts, no servers of our own, no analytics and no advertising. Every sound file ships inside
+  the app bundle and the music layers are generated on your device as they play, so
+  listening works with no connection at all. The only time the App reaches a network is
+  when you buy, restore or manage a subscription — and that is a conversation with
+  <strong>Apple</strong>, not with us. There is nothing for us to collect, because we
+  never receive anything.
+</div>
+
+<h2>1. What MoodNight Does</h2>
+<p>MoodNight plays and mixes nature soundscapes — rain, ocean, forest, crickets, and
+similar — so you can fall asleep, relax or focus. You can layer several sounds together,
+set their volumes, save the result as your own mix, and run a sleep timer that fades the
+audio out.</p>
+<p>MoodNight also offers an optional paid subscription, which unlocks layering several
+sounds at once and the rest of the catalogue.</p>
+<p>All audio is bundled with the App or synthesised on your device in real time: nothing
+is streamed or downloaded, and playback works in airplane mode. The App reaches the
+network only for the subscription actions Apple handles — reading the current prices,
+completing a purchase, and restoring an earlier one.</p>
+
+<h2>2. Information We Collect</h2>
+<p><strong>None.</strong> We do not collect, receive, or have access to any information
+about you or your use of the App. Specifically, the App has:</p>
+<ul>
+  <li>no account or login system;</li>
+  <li>no analytics SDK, no advertising SDK, no crash-reporting SDK, no social-media SDK;</li>
+  <li>no server of our own — the App never sends anything to us, and the only network
+  calls it makes are the App Store subscription requests described in section 6;</li>
+  <li>no access to your contacts, photos, camera, microphone, or location.</li>
+</ul>
+<p>We do not build user profiles, and we do not sell or share data, because we do not
+receive any.</p>
+
+<h2>3. What Is Stored on Your Device and in Your iCloud</h2>
+<p>The App saves a small amount of data locally, using the operating system's standard
+app-preferences storage, so that it can remember your setup between sessions:</p>
+<ul>
+  <li>your settings — chosen language, light/dark theme, sleep-timer duration, the star
+  sign you picked if any, the transition interval, and the name you typed if you gave
+  one;</li>
+  <li>your saved mixes — the names you gave them, the sounds they contain, and the volume
+  of each layer;</li>
+  <li>your playlists — their names and which of your mixes they hold;</li>
+  <li>the mix that was playing last, so the App can restore it;</li>
+  <li>how many nights you have used the App, and when the system rating prompt was last
+  requested, so that you are not asked again too soon;</li>
+  <li>whether you have completed the initial mood question, whether the introductory
+  subscription screen has been shown once, and whether a subscription has ever been
+  active on this device — the last of these only so that the App does not show a sales
+  screen to someone who has already paid.</li>
+</ul>
+<p>This data is a few kilobytes of text. It stays in the App&rsquo;s private storage area on
+your device. We cannot read it, retrieve it, or recover it for you.</p>
+
+<h3>iCloud</h3>
+<p>So that your mixes, playlists and settings are not lost when you reinstall the App or
+switch devices, this same small set of data is also kept in <strong>your own iCloud
+account</strong>, using Apple&rsquo;s built-in iCloud storage. It is your iCloud, under your
+Apple Account &mdash; we operate no server, receive no copy, and cannot read it. Nothing else
+is stored there: no audio, no listening history, no mood answers. If you are not signed in
+to iCloud, or turn iCloud off for MoodNight in your device settings, the App works the
+same and keeps the data on the device only.</p>
+
+<h2>4. The Mood Check-In</h2>
+<p>The App can ask how you are feeling and suggest a matching soundscape. Your answer is
+used immediately, on your device, to pick a sound — it is not stored as a history, not
+analysed, and not sent anywhere. Closing the App discards it.</p>
+
+<h2>5. Background Playback</h2>
+<p>So that the sound continues when your screen locks, the App declares the iOS background
+audio capability and publishes the current track title to the system's lock-screen
+player controls. This is handled entirely by iOS on your device. No playback information
+is reported to us or to any third party.</p>
+
+<h2>6. Purchases</h2>
+<p>MoodNight offers an optional auto-renewing subscription, sold as a monthly or a yearly
+plan. It is sold and processed entirely by the <strong>Apple App Store</strong> using your
+Apple Account. We never see or store your payment details, card numbers, or billing
+address, and we cannot tell who subscribed.</p>
+<p>To know whether to unlock the paid features, the App asks the App Store on your device
+whether a valid subscription exists. That check is made by Apple's StoreKit framework, the
+answer stays on your device, and it is never sent to us. Apple may provide us with
+anonymous, aggregated sales reports that cannot identify you. Apple's handling of purchase
+data is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy
+Policy</a>.</p>
+
+<h2>7. Third-Party Services</h2>
+<p>The only third party involved in normal use is <strong>Apple</strong> — for app
+distribution, for the subscription described above, and for the occasional rating prompt,
+which is Apple's own system dialog. The App embeds no other third-party service, no
+analytics and no advertising, and makes no network requests of its own.</p>
+
+<h2>8. Children's Privacy</h2>
+<p>The App is intended for a general audience and is not directed at children under the
+age of 13. Because the App collects no personal information from anyone, no such data can
+be gathered from children.</p>
+
+<h2>9. Data Retention &amp; Deletion</h2>
+<p>Your data lives on your device and, if iCloud is on, in your own iCloud account. To
+remove a saved mix or playlist, delete it inside the App; the deletion carries to your
+other devices. To remove everything, uninstall the App and turn iCloud off for MoodNight
+in your device settings &mdash; uninstalling alone leaves the iCloud copy, which is what lets
+your mixes come back if you install the App again. We hold no server-side copies, so there
+is nothing for us to delete on your behalf.</p>
+
+<h2>10. Your Rights</h2>
+<p>Privacy laws such as the GDPR and CCPA give you rights to access, correct, delete and
+port your personal data. Because MoodNight does not collect or receive personal data, we
+hold no records about you to disclose, amend, or erase. You retain full control of your
+data directly on your device and in your own iCloud account.</p>
+
+<h2>11. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes are effective immediately
+after being posted on this page, and the "Last Updated" date above will be revised. If we
+ever introduce an optional feature that sends data off your device, this policy will be
+updated before that feature ships, and the feature will be off unless you turn it on.</p>
+
+<h2>12. Contact Us</h2>
+<p>If you have any questions about this Privacy Policy, contact us at
+<a href="mailto:yebappcontact@gmail.com">yebappcontact@gmail.com</a>.</p>
+
+<p class="muted" style="margin-top:3em">
+  <a href="index.html">Home</a> &middot;
+  <a href="terms.html">Terms of Use</a> &middot;
+  <a href="support.html">Support</a>
+</p>
+</body>
+</html>
