@@ -57,19 +57,24 @@
     <span>MoodNight</span>
   </a>
 <h1>Privacy Policy</h1>
-<p class="muted">Last Updated: August 20, 2026</p>
+<p class="muted">Last Updated: October 8, 2026</p>
 
 <p>This Privacy Policy explains how information is handled when you use
 <strong>MoodNight</strong> (the "App"). By using the App, you agree to this policy.</p>
 
 <div class="highlight">
-  <strong>The short version:</strong> Nothing leaves your phone. MoodNight has no user
-  accounts, no servers of our own, no analytics and no advertising. Every sound file ships inside
-  the app bundle and the music layers are generated on your device as they play, so
-  listening works with no connection at all. The only time the App reaches a network is
-  when you buy, restore or manage a subscription — and that is a conversation with
-  <strong>Apple</strong>, not with us. There is nothing for us to collect, because we
-  never receive anything.
+  <strong>The short version:</strong> MoodNight has no user accounts, no servers of our
+  own and no analytics. Every sound file ships inside the app and the music layers are
+  generated on your device as they play, so listening works with no connection at all.
+  <strong>We receive nothing about you.</strong>
+  <br><br>
+  Two things do reach a network, and neither of them is us.
+  Buying, restoring or managing a subscription is a conversation with the store you
+  installed the App from — Apple on iPhone, Google Play on Android.
+  And <strong>the Android version shows ads</strong>, which are served by Google AdMob;
+  that is the one part of the App that collects anything, and section 7 explains exactly
+  what. The iPhone version has no ads at all, and a subscription removes the ads on
+  Android.
 </div>
 
 <h2>1. What MoodNight Does</h2>
@@ -81,21 +86,27 @@ audio out.</p>
 sounds at once and the rest of the catalogue.</p>
 <p>All audio is bundled with the App or synthesised on your device in real time: nothing
 is streamed or downloaded, and playback works in airplane mode. The App reaches the
-network only for the subscription actions Apple handles — reading the current prices,
-completing a purchase, and restoring an earlier one.</p>
+network for the subscription actions the store handles — reading the current prices,
+completing a purchase, and restoring an earlier one — and, on Android, to fetch the ads
+described in section 7. If there is no connection, listening is unaffected.</p>
 
 <h2>2. Information We Collect</h2>
-<p><strong>None.</strong> We do not collect, receive, or have access to any information
-about you or your use of the App. Specifically, the App has:</p>
+<p><strong>We collect nothing.</strong> We do not receive, or have access to, any
+information about you or your use of the App. Specifically, the App has:</p>
 <ul>
   <li>no account or login system;</li>
-  <li>no analytics SDK, no advertising SDK, no crash-reporting SDK, no social-media SDK;</li>
-  <li>no server of our own — the App never sends anything to us, and the only network
-  calls it makes are the App Store subscription requests described in section 6;</li>
+  <li>no analytics SDK, no crash-reporting SDK, no social-media SDK;</li>
+  <li>no server of our own — the App never sends anything to us;</li>
   <li>no access to your contacts, photos, camera, microphone, or location.</li>
 </ul>
 <p>We do not build user profiles, and we do not sell or share data, because we do not
 receive any.</p>
+<div class="warn">
+  <strong>One exception, on Android only:</strong> the Android version shows ads, and the
+  advertising SDK that serves them does collect information — not for us, and we never
+  see it. It is described in full in section 7. The iPhone version contains no
+  advertising SDK, and subscribing on Android removes the ads.
+</div>
 
 <h2>3. What Is Stored on Your Device and in Your iCloud</h2>
 <p>The App saves a small amount of data locally, using the operating system's standard
@@ -126,6 +137,9 @@ Apple Account &mdash; we operate no server, receive no copy, and cannot read it.
 is stored there: no audio, no listening history, no mood answers. If you are not signed in
 to iCloud, or turn iCloud off for MoodNight in your device settings, the App works the
 same and keeps the data on the device only.</p>
+<p><strong>On Android</strong> there is no iCloud copy: this same small set of data stays
+on the device only, in the App's private storage, and is removed when you uninstall the
+App.</p>
 
 <h2>4. The Mood Check-In</h2>
 <p>The App can ask how you are feeling and suggest a matching soundscape. Your answer is
@@ -133,33 +147,70 @@ used immediately, on your device, to pick a sound — it is not stored as a hist
 analysed, and not sent anywhere. Closing the App discards it.</p>
 
 <h2>5. Background Playback</h2>
-<p>So that the sound continues when your screen locks, the App declares the iOS background
-audio capability and publishes the current track title to the system's lock-screen
-player controls. This is handled entirely by iOS on your device. No playback information
-is reported to us or to any third party.</p>
+<p>So that the sound continues when your screen locks, the App publishes the current track
+title to the system's lock-screen player controls — using the background audio capability
+on iPhone, and a media-playback foreground service on Android. Both are handled entirely
+by the operating system on your device. No playback information is reported to us or to
+any third party, and nothing about what you listen to is used for advertising.</p>
 
 <h2>6. Purchases</h2>
 <p>MoodNight offers an optional auto-renewing subscription, sold as a monthly or a yearly
-plan. It is sold and processed entirely by the <strong>Apple App Store</strong> using your
-Apple Account. We never see or store your payment details, card numbers, or billing
-address, and we cannot tell who subscribed.</p>
-<p>To know whether to unlock the paid features, the App asks the App Store on your device
-whether a valid subscription exists. That check is made by Apple's StoreKit framework, the
-answer stays on your device, and it is never sent to us. Apple may provide us with
-anonymous, aggregated sales reports that cannot identify you. Apple's handling of purchase
-data is governed by <a href="https://www.apple.com/legal/privacy/">Apple's Privacy
-Policy</a>.</p>
+plan. It is sold and processed entirely by the store you installed the App from — the
+<strong>Apple App Store</strong> using your Apple Account on iPhone, or
+<strong>Google Play</strong> using your Google account on Android. We never see or store
+your payment details, card numbers, or billing address, and we cannot tell who
+subscribed.</p>
+<p>To know whether to unlock the paid features, the App asks the store on your device
+whether a valid subscription exists. That check is made by the store's own framework
+(StoreKit on iPhone, Google Play Billing on Android), the answer stays on your device, and
+it is never sent to us. Either store may provide us with anonymous, aggregated sales
+reports that cannot identify you. Their handling of purchase data is governed by
+<a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a> and
+<a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
-<h2>7. Third-Party Services</h2>
-<p>The only third party involved in normal use is <strong>Apple</strong> — for app
-distribution, for the subscription described above, and for the occasional rating prompt,
-which is Apple's own system dialog. The App embeds no other third-party service, no
-analytics and no advertising, and makes no network requests of its own.</p>
+<h2>7. Third-Party Services and Advertising</h2>
+<p>On <strong>iPhone</strong>, the only third party involved in normal use is
+<strong>Apple</strong> — for app distribution, for the subscription described above, and
+for the occasional rating prompt, which is Apple's own system dialog. The iPhone version
+embeds no other third-party service, no analytics and no advertising.</p>
+
+<p>On <strong>Android</strong>, there are two: <strong>Google Play</strong>, for app
+distribution and for the subscription, and <strong>Google AdMob</strong>, which serves
+the ads in the free version.</p>
+
+<h3>What the ads collect</h3>
+<p>We do not receive any of it. AdMob is Google's advertising service, and to choose and
+measure an ad it may process your device's advertising ID, your IP address, and general
+information about the device and the ad shown. This is governed by
+<a href="https://policies.google.com/technologies/partner-sites">Google's privacy
+policy</a>; a list of what Google collects for ads is published by Google and is not
+something we control or can see. We hold no copy and build no profile.</p>
+
+<h3>Where the ads appear</h3>
+<p>Only between listening sessions, and only when no sound is playing — never over
+audio that is already running, and never while a sleep timer is counting down.</p>
+
+<h3>Your choice</h3>
+<ul>
+  <li>In the European Economic Area, the United Kingdom and Switzerland, Google's own
+  consent form appears before any ad is requested, and you can allow or refuse
+  personalised advertising. You can change that decision at any time from
+  <em>Settings → Ad privacy</em> inside the App.</li>
+  <li>On any Android device you can reset or delete your advertising ID in
+  <em>Settings → Google → Ads</em>, which also lets you opt out of ad personalisation
+  system-wide.</li>
+  <li>A <strong>subscription removes the ads entirely</strong>, and with them the
+  advertising SDK's requests.</li>
+</ul>
 
 <h2>8. Children's Privacy</h2>
 <p>The App is intended for a general audience and is not directed at children under the
-age of 13. Because the App collects no personal information from anyone, no such data can
-be gathered from children.</p>
+age of 13. We collect no personal information from anyone, so no such data can be
+gathered from children by us.</p>
+<p>On Android, the ads described in section 7 are requested as not directed to children,
+which instructs Google to withhold personalised advertising and to apply the restrictions
+it uses for child-directed treatment. If a child uses the App, a subscription removes the
+ads entirely.</p>
 
 <h2>9. Data Retention &amp; Deletion</h2>
 <p>Your data lives on your device and, if iCloud is on, in your own iCloud account. To
@@ -173,7 +224,12 @@ is nothing for us to delete on your behalf.</p>
 <p>Privacy laws such as the GDPR and CCPA give you rights to access, correct, delete and
 port your personal data. Because MoodNight does not collect or receive personal data, we
 hold no records about you to disclose, amend, or erase. You retain full control of your
-data directly on your device and in your own iCloud account.</p>
+data directly on your device and, on iPhone, in your own iCloud account.</p>
+<p>For the advertising described in section 7, the controller is Google, not us. You can
+withdraw or change your advertising consent at any time from <em>Settings → Ad privacy</em>
+inside the App, reset or delete your advertising ID in your device settings, or remove the
+ads altogether by subscribing. Requests about data Google holds should be directed to
+Google using the links in section 7.</p>
 
 <h2>11. Changes to This Policy</h2>
 <p>We may update this Privacy Policy from time to time. Changes are effective immediately
